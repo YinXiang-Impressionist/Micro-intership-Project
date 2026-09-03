@@ -246,7 +246,8 @@ strong {
 .hero-date {
   font-size: 0.84rem;
   color: var(--ink-muted);
-  font-family: var(--font-mono);
+  font-family: var(--font-editorial);
+  font-weight: 500;
 }
 
 .hero-title {
@@ -301,13 +302,13 @@ strong {
 }
 
 .section-label-quiet {
-  font-size: 0.78rem;
-  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-family: var(--font-editorial);
   font-weight: 600;
   color: var(--ink-muted);
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: 0.5rem;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.4rem;
   display: block;
 }
 
@@ -458,17 +459,17 @@ strong {
 }
 
 .step-marker {
-  width: 42px;
-  height: 42px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   background-color: #FFF;
-  border: 2px solid var(--ink-main);
+  border: 1.5px solid var(--ink-main);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-mono);
+  font-family: var(--font-editorial);
   font-weight: 700;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   flex-shrink: 0;
   z-index: 2;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
@@ -484,8 +485,8 @@ strong {
 }
 
 .step-time-badge {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-family: var(--font-editorial);
+  font-size: 0.78rem;
   color: var(--pen-blue);
   font-weight: 600;
   margin-bottom: 0.4rem;
@@ -580,7 +581,7 @@ strong {
 }
 
 .case-duration-tag {
-  font-family: var(--font-mono);
+  font-family: var(--font-editorial);
   font-size: 0.8rem;
   font-weight: 600;
   background-color: var(--bg-warm-tint);
@@ -594,11 +595,11 @@ strong {
 }
 
 .block-lbl {
-  font-size: 0.78rem;
-  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-family: var(--font-editorial);
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
   color: var(--ink-muted);
   margin-bottom: 0.45rem;
   display: block;

@@ -4,231 +4,506 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MicroIntern SG — 真实的微实习，看清真实的工作契合度</title>
-  <meta name="description" content="A pragmatic platform for Singapore SMEs and university students. Experience genuine daily workflows before making a hiring commitment." />
+  <meta name="description" content="Singapore's first proof-of-work micro-internship platform. Connecting Singapore SMEs with university talent through real routine workflows." />
   
-  <link rel="stylesheet" href="styles.css?v=1.4.0" />
+  <!-- Modern Clean Typography: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css?v=2.0.0" />
 </head>
 <body data-lang="en">
 
-  <!-- Minimal Nav -->
+  <!-- Top Announcement Bar -->
+  <aside class="top-announcement">
+    <div class="announcement-content">
+      <span class="badge badge-amber" data-i18n="announcement_badge">先行者第一期</span>
+      <span data-i18n="announcement_text">现已开放新加坡中小企业雇主与 NUS / NTU / SMU 高校学子入驻申请。</span>
+      <a href="#vanguard-section" class="announcement-link" data-i18n="announcement_cta">申领先锋通行证 →</a>
+    </div>
+  </aside>
+
+  <!-- Sticky Minimal Navbar -->
   <header class="navbar">
     <div class="nav-container">
       <a href="#" class="brand-logo">
-        <span>MicroIntern.sg</span>
-        <span class="sub" data-i18n="nav_brand_sub">Singapore</span>
+        <span class="logo-symbol">μ</span>
+        <span class="logo-text">MicroIntern<span class="tld">.sg</span></span>
       </a>
 
-      <nav class="nav-links">
-        <a href="#how-it-works" data-i18n="nav_how">How It Works</a>
-        <a href="#cases" data-i18n="nav_cases">Micro-Internships</a>
-        <a href="#join" data-i18n="nav_join_link">Join Pilot</a>
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="#manifesto" data-i18n="nav_manifesto">为什么选择微实习</a>
+        <a href="#audiences" data-i18n="nav_audiences">企业与学生端</a>
+        <a href="#proof-vault" data-i18n="nav_vault">交付案例台</a>
+        <a href="#comparison" data-i18n="nav_comparison">对比分析</a>
       </nav>
 
       <div class="nav-actions">
-        <button id="lang-toggle-btn" class="btn-lang" aria-label="Toggle language">
-          <span id="current-lang-label">中文 (ZH)</span>
+        <!-- Language Switcher -->
+        <button id="lang-toggle-btn" class="btn btn-sm btn-secondary" aria-label="Toggle language">
+          <span>🌐</span>
+          <span id="current-lang-label">English (EN)</span>
         </button>
-        <a href="#join" class="btn-quiet" data-i18n="nav_cta">Join Pilot</a>
+        <a href="#vanguard-section" class="btn btn-sm btn-primary" data-i18n="nav_cta">加入先锋计划</a>
       </div>
     </div>
   </header>
 
-  <main class="page-wrap">
-    
-    <!-- SCREEN 1: HERO & THE PRAGMATIC PAIN POINTS -->
-    <section class="section-hero">
-      <div class="hero-badge-wrap">
-        <span class="tag-pill" data-i18n="hero_pill">SINGAPORE MICRO-INTERNSHIP PILOT</span>
-      </div>
-
-      <h1 class="hero-title">
-        <span data-i18n="hero_line1">A resume doesn't tell the whole story.</span><br>
-        <span class="marker-highlight" data-i18n="hero_line2">Experience the real daily work.</span>
-      </h1>
-
-      <p class="hero-sub" data-i18n="hero_sub">
-        A pragmatic platform connecting Singapore SMEs with university talent. Experience a company's genuine daily work routine before making a long-term commitment.
-      </p>
-
-      <div class="motto-box">
-        <span class="motto-text" data-i18n="motto_text">"Evaluate real workflows. Eliminate hiring guesswork."</span>
-      </div>
-
-      <!-- The Two Pragmatic Pains -->
-      <div class="dual-pain-grid">
-        <div class="pain-card">
-          <span class="pain-who" data-i18n="pain_sme_who">FOR SINGAPORE SMES & FOUNDERS</span>
-          <h2 class="pain-title" data-i18n="pain_sme_title">What is your biggest risk when hiring an intern?</h2>
-          <p class="pain-desc" data-i18n="pain_sme_desc">
-            Candidates often interview well, but you only discover whether they can handle your daily workflow after weeks of onboarding. MicroIntern SG lets you post a genuine daily routine workflow upfront. Review actual execution before committing your team's time.
-          </p>
-        </div>
-
-        <div class="pain-card">
-          <span class="pain-who" data-i18n="pain_stu_who">FOR NUS, NTU & SMU STUDENTS</span>
-          <h2 class="pain-title" data-i18n="pain_stu_title">Stuck behind the "prior experience" barrier?</h2>
-          <p class="pain-desc" data-i18n="pain_stu_desc">
-            Entry-level postings demand prior internships, and standard applications rarely give you a chance to demonstrate your practical ability. Complete a company's real micro-internship, deliver tangible work, and put your capabilities directly in front of the team.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- SCREEN 2: HOW IT WORKS (3 SIMPLE STEPS) -->
-    <section id="how-it-works" class="section-flow">
-      <span class="section-kicker" data-i18n="flow_kicker">THE PRACTICAL ENGINE</span>
-      <h2 class="section-title" data-i18n="flow_title">How a Micro-Internship Works</h2>
-      <p class="section-desc" data-i18n="flow_desc">
-        A realistic two-way evaluation built for Singapore's local business environment.
-      </p>
-
-      <div class="steps-grid">
-        <div class="step-card">
-          <div class="step-num">01</div>
-          <h3 class="step-head" data-i18n="step1_head">SME Posts a Routine Micro-Internship (Free)</h3>
-          <p class="step-body" data-i18n="step1_body">
-            Package a standard routine workflow (e.g. data cleaning, onboarding funnel analysis, or content drafting) into a short micro-internship. <strong>Free to post. Zero upfront payroll commitment.</strong>
-          </p>
-        </div>
-
-        <div class="step-card">
-          <div class="step-num">02</div>
-          <h3 class="step-head" data-i18n="step2_head">Students Walk Through the Real Workflow</h3>
-          <p class="step-body" data-i18n="step2_body">
-            Students take on the micro-internship, experiencing the company's actual business rhythm and standards. Completed deliverables become verified work samples in their portfolio.
-          </p>
-        </div>
-
-        <div class="step-card">
-          <div class="step-num">03</div>
-          <h3 class="step-head" data-i18n="step3_head">Review Fit & Connect Directly</h3>
-          <p class="step-body" data-i18n="step3_body">
-            The employer sees who genuinely fits their day-to-day operations. When there is mutual alignment, both sides connect directly for coffee, a chat, or a formal internship offer.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- SCREEN 3: 2 REAL CASES & FAST SIGNUP -->
-    <section id="cases" class="section-cases">
-      <span class="section-kicker" data-i18n="cases_kicker">PRAGMATIC PROOFS</span>
-      <h2 class="section-title" data-i18n="cases_title">Two Real Micro-Internship Examples</h2>
-
-      <!-- Case Tabs -->
-      <div class="case-tabs">
-        <button class="case-tab-btn active" data-case="c1" data-i18n="tab1_btn">PayBridge SEA (Product Operations)</button>
-        <button class="case-tab-btn" data-case="c2" data-i18n="tab2_btn">OmniSupply AI (Data Engineering)</button>
-      </div>
-
-      <!-- Case 1 -->
-      <div class="case-box active" id="c1-box">
-        <div class="case-head-line">
-          <div>
-            <h3 class="case-company">PayBridge SEA</h3>
-            <span class="case-sub" data-i18n="c1_sub">Cross-border payments SME • Tanjong Pagar</span>
-          </div>
-          <span class="case-tag" data-i18n="c1_duration_tag">Micro-Internship</span>
-        </div>
+  <!-- Main Content -->
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="hero-container">
         
-        <div class="case-body-snippet">
-          <strong data-i18n="c1_task_lbl">Routine Workflow Process:</strong>
-          <span data-i18n="c1_task_val">Review weekly onboarding event logs, identify friction points for Indonesian business users during Singpass verification, and propose practical low-code improvements.</span>
+        <div class="hero-pill-badge">
+          <span>✨</span>
+          <span data-i18n="hero_pill">新加坡工作量证明（PROOF-OF-WORK）微实习平台</span>
         </div>
 
-        <div class="case-body-snippet">
-          <strong data-i18n="c1_sol_lbl">Student Execution (Darren, NUS Y1):</strong>
-          <span data-i18n="c1_sol_val">Walked through the complete operational logic: diagnosed corporate entity mismatch errors and delivered clean fallback upload mockups with OCR preview.</span>
-        </div>
+        <h1 class="hero-headline">
+          <span data-i18n="hero_h1_line1">传统纸面简历已经失效。</span>
+          <span class="line-break" data-i18n="hero_h1_line2">用交付说话，让 Offer 敲门。</span>
+        </h1>
 
-        <div class="case-outcome-note">
-          <span class="outcome-author" data-i18n="c1_out_auth">Mutual Fit Outcome:</span>
-          <span data-i18n="c1_out_val">Darren experienced real fintech operations; the COO confirmed he could handle routine analytics independently. Hired as a part-time Product Analyst.</span>
-        </div>
-      </div>
-
-      <!-- Case 2 -->
-      <div class="case-box" id="c2-box">
-        <div class="case-head-line">
-          <div>
-            <h3 class="case-company">OmniSupply AI</h3>
-            <span class="case-sub" data-i18n="c2_sub">Supply chain automation • Jurong Innovation District</span>
-          </div>
-          <span class="case-tag" data-i18n="c2_duration_tag">Micro-Internship</span>
-        </div>
-        
-        <div class="case-body-snippet">
-          <strong data-i18n="c2_task_lbl">Routine Workflow Process:</strong>
-          <span data-i18n="c2_task_val">Maintain the daily data pipeline: review non-standard supplier invoice formats, build extraction regex scripts, and write unit tests for edge-case variations.</span>
-        </div>
-
-        <div class="case-body-snippet">
-          <strong data-i18n="c2_sol_lbl">Student Execution (Siddharth, NTU Y1):</strong>
-          <span data-i18n="c2_sol_val">Completed the end-to-end task according to team coding guidelines, writing clean Python code and 15 tests covering edge-case invoice structures.</span>
-        </div>
-
-        <div class="case-outcome-note">
-          <span class="outcome-author" data-i18n="c2_out_auth">Mutual Fit Outcome:</span>
-          <span data-i18n="c2_out_val">Siddharth confirmed he enjoyed the team's engineering stack, while the CTO verified he could contribute to regular sprint cycles from day one. Formal internship offered.</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- SIGNUP FORM -->
-    <section id="join" class="section-join">
-      <div class="join-card">
-        <span class="section-kicker" data-i18n="join_kicker">PILOT COHORT 01</span>
-        <h2 class="join-title" data-i18n="join_title">Join the MicroIntern SG Pilot</h2>
-        <p class="join-sub" data-i18n="join_sub">
-          Connecting 30 Singapore SMEs offering authentic micro-internships with 100 motivated NUS / NTU / SMU students.
+        <p class="hero-subdeck" data-i18n="hero_subdeck">
+          告别概率极低的简历彩票。新加坡本地中小企业发布涵盖日常工作真实流程的微实习，顶尖高校学子直接以实际成果证明胜任力。告别关键词虚标，让踏实的成果赢得企业的赏识与录用。
         </p>
 
-        <form id="join-form">
-          <div class="form-row-role">
-            <label class="role-chip">
-              <input type="radio" name="userRole" value="sme" checked />
-              <span class="role-text" data-i18n="role_sme">I am an SME / Employer (Post a Micro-Internship Free)</span>
-            </label>
-            <label class="role-chip">
-              <input type="radio" name="userRole" value="student" />
-              <span class="role-text" data-i18n="role_stu">I am a Student (Take on a Micro-Internship)</span>
-            </label>
-          </div>
-
-          <div class="form-inputs-grid">
-            <input type="text" id="userName" class="clean-field" placeholder="Your Name or Company" required />
-            <input type="text" id="userContact" class="clean-field" placeholder="WhatsApp or Email" required />
-          </div>
-
-          <button type="submit" class="btn-submit" data-i18n="btn_submit">
-            Claim Your Pilot Access →
-          </button>
-        </form>
-
-        <div id="join-result" class="join-result-box" style="display: none;">
-          <div class="result-badge" data-i18n="res_badge">PILOT ACCESS CONFIRMED</div>
-          <div class="result-serial font-mono" id="res-serial">#SG-0419</div>
-          <p class="result-msg" id="res-msg">
-            Thank you! We will reach out via WhatsApp/Email to help design and match your first micro-internship.
-          </p>
+        <!-- Slogan Capsule -->
+        <div class="slogan-capsule">
+          <span class="capsule-icon">⚡</span>
+          <span class="capsule-text" data-i18n="stamp_motto">不靠面试盲猜，用日常流程的真实表现说话。</span>
         </div>
+
+        <!-- Action CTAs -->
+        <div class="hero-cta-group">
+          <a href="#audiences" class="btn btn-lg btn-primary">
+            <span data-i18n="cta_sme_btn">探索企业端与学生端价值 ↓</span>
+          </a>
+          <a href="#proof-vault" class="btn btn-lg btn-secondary">
+            <span data-i18n="cta_inspect_btn">检阅 2 个真实微实习案例 ☕</span>
+          </a>
+        </div>
+
+        <!-- Metric Ribbon -->
+        <div class="metric-ribbon">
+          <div class="metric-item">
+            <span class="metric-num">95%</span>
+            <span class="metric-desc" data-i18n="stat_1">传统招聘中被 AI 模板淹没的无效简历</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-num">3.5 hrs</span>
+            <span class="metric-desc" data-i18n="stat_2">完成一次日常微实习的平均专注时长</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-num">89%</span>
+            <span class="metric-desc" data-i18n="stat_3">高质量成果交付者获正式实习意向或深度面聊</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-num">$0</span>
+            <span class="metric-desc" data-i18n="stat_4">首期入驻中小企业的发布与对接成本</span>
+          </div>
+        </div>
+
       </div>
     </section>
 
+    <!-- THE MANIFESTO -->
+    <section id="manifesto" class="section manifesto-section">
+      <div class="content-container">
+        
+        <div class="section-header-centered">
+          <span class="badge badge-purple section-tag" data-i18n="manifesto_badge">核心认知</span>
+          <h2 class="section-title" data-i18n="manifesto_title">
+            招聘本该是对日常胜任力的双向验证。<br>
+            现实中却成了 AI 润色与纸面简历的军备竞赛。
+          </h2>
+          <p class="section-subtitle" data-i18n="manifesto_subtitle">
+            企业看纸面简历猜人，入职带教一个月才发现候选人根本适应不了日常工作；学生被生硬的“过往经验门槛”拦截，连展示实操手艺的机会都没有。
+          </p>
+        </div>
+
+        <!-- 3 Pillar Cards -->
+        <div class="pillar-grid">
+          <div class="card pillar-card">
+            <div class="card-icon-wrap bg-blue-subtle">
+              <span>📋</span>
+            </div>
+            <h3 class="card-title" data-i18n="pillar_1_title">一份完整的日常微实习</h3>
+            <p class="card-desc" data-i18n="pillar_1_desc">
+              不搞单一机械的打杂 Task。企业将团队日常业务的真实工作全流程（从业务场景理解、方案构建到成果验证）整合为一份微实习。
+            </p>
+          </div>
+
+          <div class="card pillar-card">
+            <div class="card-icon-wrap bg-green-subtle">
+              <span>🛠️</span>
+            </div>
+            <h3 class="card-title" data-i18n="pillar_2_title">零试错成本的双赢模式</h3>
+            <p class="card-desc" data-i18n="pillar_2_desc">
+              企业免费发布，无需对每位申请者付费；多位学生完整经历实际日常流程，即使未被最终录用，也扎实收获了一份真实的商业实战作品集。
+            </p>
+          </div>
+
+          <div class="card pillar-card">
+            <div class="card-icon-wrap bg-amber-subtle">
+              <span>🤝</span>
+            </div>
+            <h3 class="card-title" data-i18n="pillar_3_title">看清日常契合，直联人才</h3>
+            <p class="card-desc" data-i18n="pillar_3_desc">
+              企业通过交付成果，清晰评估谁能无缝融入团队日常节奏。双方互相认可，企业直接约喝咖啡、线下面聊或发放正式实习 Offer。
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOR SMES & STUDENTS (DUAL AUDIENCE) -->
+    <section id="audiences" class="section dual-hub-section">
+      <div class="content-container">
+        
+        <div class="section-header-centered">
+          <span class="badge badge-blue section-tag" data-i18n="audiences_badge">双端价值</span>
+          <h2 class="section-title" data-i18n="audiences_title">为新加坡 SME 与顶尖高校学子量身设计</h2>
+          <p class="section-subtitle" data-i18n="audiences_subtitle">
+            不靠虚浮的概念。在正式做出雇佣承诺之前，先通过真实的日常业务互相验证。
+          </p>
+        </div>
+
+        <div class="dual-columns">
+          
+          <!-- SME Column -->
+          <div class="card audience-card">
+            <div class="audience-header">
+              <span class="badge badge-blue" data-i18n="sme_tag">致新加坡中小企业雇主</span>
+              <h3 class="audience-title" data-i18n="sme_title">你招实习生，最怕的是什么？</h3>
+            </div>
+            
+            <p class="audience-lead" data-i18n="sme_lead">
+              候选人面试对答如流、简历写得光鲜亮丽，但带教一个月才发现对方连团队日常业务都无法独立上手。传统的招聘往往是一场单向试错。
+            </p>
+
+            <ul class="benefit-list">
+              <li>
+                <span class="check-icon">✓</span>
+                <div>
+                  <strong data-i18n="sme_b1_title">发布日常微实习（完全免费）：</strong>
+                  <span data-i18n="sme_b1_desc">梳理团队日常正在做的一段业务流程，0 成本发布，无需对每位申请者付费。</span>
+                </div>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <div>
+                  <strong data-i18n="sme_b2_title">多维度检验日常胜任力：</strong>
+                  <span data-i18n="sme_b2_desc">直接对比多位学生提交的实际交付物，谁具备真本事、谁契合日常工作习惯，一目了然。</span>
+                </div>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <div>
+                  <strong data-i18n="sme_b3_title">确认合适再聊，零试错包袱：</strong>
+                  <span data-i18n="sme_b3_desc">挑出最出彩的候选人发起咖啡邀约，直接洽谈兼职或长期正式实习。</span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="audience-action">
+              <a href="#vanguard-section" class="btn btn-primary btn-block" data-i18n="sme_cta">免费发布日常微实习 →</a>
+            </div>
+          </div>
+
+          <!-- Student Column -->
+          <div class="card audience-card">
+            <div class="audience-header">
+              <span class="badge badge-green" data-i18n="stu_tag">致 NUS、NTU 与 SMU 高校学子</span>
+              <h3 class="audience-title" data-i18n="stu_title">想找实习，但总卡在“缺乏经验”？</h3>
+            </div>
+            
+            <p class="audience-lead" data-i18n="stu_lead">
+              大一大二求职最大的困境，就是几乎所有岗位都要求“过往实习经验”，精心修改的简历往往在系统初筛就被拦截，根本没有机会证明实操能力。
+            </p>
+
+            <ul class="benefit-list">
+              <li>
+                <span class="check-icon">✓</span>
+                <div>
+                  <strong data-i18n="stu_b1_title">亲历企业日常工作的完整流程：</strong>
+                  <span data-i18n="stu_b1_desc">提前沉浸式了解真实企业的日常业务节奏与工作要求，告别盲盒猜岗位。</span>
+                </div>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <div>
+                  <strong data-i18n="stu_b2_title">成果直达负责人案头：</strong>
+                  <span data-i18n="stu_b2_desc">跳过冰冷的算法简历初筛，靠扎实的代码与分析成果直接让创始人或业务主管看到。</span>
+                </div>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <div>
+                  <strong data-i18n="stu_b3_title">稳赚不赔的实战履历：</strong>
+                  <span data-i18n="stu_b3_desc">即便未获最终 Offer，也扎实收获了一份有真实业务依托的商业级作品集背书。</span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="audience-action">
+              <a href="#vanguard-section" class="btn btn-secondary btn-block" data-i18n="stu_cta">认领真实微实习 →</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROOF VAULT: 2 REAL CASES -->
+    <section id="proof-vault" class="section vault-section">
+      <div class="content-container">
+        
+        <div class="section-header-centered">
+          <span class="badge badge-amber section-tag" data-i18n="vault_badge">实战样本</span>
+          <h2 class="section-title" data-i18n="vault_title">两份真实的微实习档案</h2>
+          <p class="section-subtitle" data-i18n="vault_subtitle">
+            检阅学生如何在真实日常业务流程中证明实力，并赢得企业的深度合作意向：
+          </p>
+        </div>
+
+        <!-- Case Tabs Navigation -->
+        <div class="case-tabs-nav">
+          <button class="case-tab-btn active" data-case="case1" data-i18n="tab_1">PayBridge SEA（产品运营微实习）</button>
+          <button class="case-tab-btn" data-case="case2" data-i18n="tab_2">OmniSupply AI（数据工程微实习）</button>
+        </div>
+
+        <!-- Case 1 Card -->
+        <div class="card case-card active" id="case1-card">
+          <div class="case-header">
+            <div class="case-company-info">
+              <span class="badge badge-blue">Fintech Operations</span>
+              <h3 class="case-company-name">PayBridge SEA</h3>
+              <span class="case-location" data-i18n="c1_loc">跨境支付初创企业 • 丹戎巴葛</span>
+            </div>
+            <div class="case-meta-tag">
+              <span class="font-mono">3.5 小时日常微实习</span>
+            </div>
+          </div>
+
+          <div class="case-grid">
+            <div class="case-sub-block">
+              <span class="sub-block-label" data-i18n="lbl_workflow">微实习涵盖的日常流程：</span>
+              <p class="sub-block-content" data-i18n="c1_flow">
+                梳理上周真实用户开户日志，排查印尼籍企业客户在 Singpass 商业认证中的高频报错断点，并输出兼顾合规与体验的低代码备选方案。
+              </p>
+            </div>
+
+            <div class="case-sub-block">
+              <span class="sub-block-label" data-i18n="lbl_execution">学生实际执行表现（Darren，NUS 大一）：</span>
+              <p class="sub-block-content" data-i18n="c1_exec">
+                逻辑清晰、迅速理清了企业实体校验逻辑。排查出实体不匹配死角，并绘制了带即时 OCR 扫描预览的交互原型草案。
+              </p>
+            </div>
+          </div>
+
+          <div class="case-outcome-banner">
+            <div class="outcome-icon">🤝</div>
+            <div>
+              <strong data-i18n="c1_out_title">双方适配结果：</strong>
+              <span data-i18n="c1_out_desc">Darren 确认了自己对金融科技产品日常分析很感兴趣；COO 确认他具备独立处理日常业务的能力，当周录用为兼职产品分析师。</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 2 Card -->
+        <div class="card case-card" id="case2-card">
+          <div class="case-header">
+            <div class="case-company-info">
+              <span class="badge badge-purple">Data Engineering</span>
+              <h3 class="case-company-name">OmniSupply AI</h3>
+              <span class="case-location" data-i18n="c2_loc">供应链自动化 SaaS • 裕廊创新区</span>
+            </div>
+            <div class="case-meta-tag">
+              <span class="font-mono">4.0 小时日常微实习</span>
+            </div>
+          </div>
+
+          <div class="case-grid">
+            <div class="case-sub-block">
+              <span class="sub-block-label" data-i18n="lbl_workflow">微实习涵盖的日常流程：</span>
+              <p class="sub-block-content" data-i18n="c2_flow">
+                维护数据接入管道：阅读非规范发票数据样例，编写模块化提取规则，并按照团队工程规范编写覆盖边缘异常的单元测试。
+              </p>
+            </div>
+
+            <div class="case-sub-block">
+              <span class="sub-block-label" data-i18n="lbl_execution">学生实际执行表现（Siddharth，NTU 大一）：</span>
+              <p class="sub-block-content" data-i18n="c2_exec">
+                代码规范严格遵守团队的 PEP8 与 Git 提交习惯，编写了 15 个异常用例测试，完全达到团队内部的日常工程交付标准。
+              </p>
+            </div>
+          </div>
+
+          <div class="case-outcome-banner">
+            <div class="outcome-icon">🤝</div>
+            <div>
+              <strong data-i18n="c2_out_title">双方适配结果：</strong>
+              <span data-i18n="c2_out_desc">Siddharth 熟悉了团队的技术栈，CTO 确认他能无缝跟进日常迭代节奏，直接发放下学期的正式实习合同。</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- COMPARISON TABLE -->
+    <section id="comparison" class="section comparison-section">
+      <div class="content-container">
+        
+        <div class="section-header-centered">
+          <span class="badge badge-purple section-tag" data-i18n="comp_badge">深度对比</span>
+          <h2 class="section-title" data-i18n="comp_title">传统纸面招聘 vs MicroIntern SG 真实微实习</h2>
+        </div>
+
+        <div class="card table-card">
+          <div class="table-responsive">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th data-i18n="th_dimension">对比维度</th>
+                  <th data-i18n="th_trad">传统纸面招聘</th>
+                  <th class="col-highlight" data-i18n="th_micro">MicroIntern SG 真实微实习</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="font-semibold" data-i18n="r1_dim">考察凭据</td>
+                  <td class="text-muted" data-i18n="r1_trad">AI 润色的 PDF 简历与自我包装</td>
+                  <td class="col-highlight font-semibold" data-i18n="r1_micro">日常真实业务流程中的可检验交付成果</td>
+                </tr>
+                <tr>
+                  <td class="font-semibold" data-i18n="r2_dim">企业成本</td>
+                  <td class="text-muted" data-i18n="r2_trad">初筛数百份假简历，带教数周才知不合格</td>
+                  <td class="col-highlight font-semibold" data-i18n="r2_micro">0 成本发布，签约前先看实际实操水平</td>
+                </tr>
+                <tr>
+                  <td class="font-semibold" data-i18n="r3_dim">学生门槛</td>
+                  <td class="text-muted" data-i18n="r3_trad">硬性卡“名企过往经历”，初筛直接过滤</td>
+                  <td class="col-highlight font-semibold" data-i18n="r3_micro">无简历歧视，凭真实手艺直接直达负责人</td>
+                </tr>
+                <tr>
+                  <td class="font-semibold" data-i18n="r4_dim">双方确定性</td>
+                  <td class="text-muted" data-i18n="r4_trad">单向盲盒赌博，入职后容易双向失望</td>
+                  <td class="col-highlight font-semibold" data-i18n="r4_micro">通过真实日常流程互相验证，契合再发 Offer</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- VANGUARD REGISTRATION FORM (ACTIONABLE CLOSING) -->
+    <section id="vanguard-section" class="section vanguard-section">
+      <div class="content-container">
+        
+        <div class="card vanguard-card">
+          <div class="vanguard-header">
+            <span class="badge badge-amber" data-i18n="vanguard_badge">首期先锋入驻</span>
+            <h2 class="vanguard-title" data-i18n="vanguard_title">加入 MicroIntern SG 试点网络</h2>
+            <p class="vanguard-subtitle" data-i18n="vanguard_subtitle">
+              首期仅连接 30 家开放日常真实微实习的新加坡中小企业，与 100 位渴望实战经验的高校学子。
+            </p>
+          </div>
+
+          <form id="vanguard-form" class="vanguard-form">
+            <!-- Role Switch -->
+            <div class="form-group">
+              <label class="form-label" data-i18n="form_role_label">我的加入身份：</label>
+              <div class="role-selector">
+                <label class="role-option">
+                  <input type="radio" name="user_role" value="sme" checked />
+                  <span class="role-box" data-i18n="role_sme">我是中小企业雇主（免费发布微实习）</span>
+                </label>
+                <label class="role-option">
+                  <input type="radio" name="user_role" value="student" />
+                  <span class="role-box" data-i18n="role_student">我是高校在校学生（认领真实微实习）</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Name & Email -->
+            <div class="form-row">
+              <div class="form-group flex-1">
+                <label for="reg-name" class="form-label" data-i18n="form_name_label">您的姓名或企业名称：</label>
+                <input type="text" id="reg-name" class="input-field" placeholder="例如：Marcus Tan 或 PayBridge SEA" required />
+              </div>
+              <div class="form-group flex-1">
+                <label for="reg-contact" class="form-label" data-i18n="form_contact_label">WhatsApp 或常用邮箱：</label>
+                <input type="text" id="reg-contact" class="input-field" placeholder="例如：+65 9123 4567 或 founder@sme.sg" required />
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg btn-block" data-i18n="form_submit_btn">
+              抢先锁定试点先锋名额 →
+            </button>
+          </form>
+
+          <!-- Result Card with Clear Actionable Next Steps -->
+          <div id="vanguard-pass" class="vanguard-pass" style="display: none;">
+            <div class="pass-status-strip">
+              <span class="pass-verified-tag">✓ 试点入驻成功确认</span>
+              <span class="pass-id-tag font-mono" id="pass-id">#SG-SME-0419</span>
+            </div>
+
+            <div class="pass-body">
+              <div class="pass-user-info">
+                <div class="pass-label">登记主体：</div>
+                <div class="pass-name" id="pass-name">Marcus Tan</div>
+                <div class="pass-role-desc" id="pass-role">新加坡中小企业雇主 • 真实日常微实习试点</div>
+              </div>
+
+              <!-- Clear Actionable Next Steps -->
+              <div class="pass-action-box">
+                <strong style="color: var(--ink-primary); display: block; margin-bottom: 0.5rem;" data-i18n="next_step_title">下一步行动指引：</strong>
+                <p style="font-size: 0.92rem; color: var(--ink-secondary); line-height: 1.6; margin-bottom: 0.75rem;" data-i18n="next_step_desc">
+                  我们已为您锁定首期名额！创始团队将在 24 小时内与您联络；您也可直接发送您的微实习岗位设想或简历作品至官方邮箱：
+                </p>
+                <a href="mailto:pilot@microintern.sg?subject=MicroIntern%20SG%20Pilot%20Inquiry" class="btn btn-sm btn-secondary" style="display: inline-block;">
+                  ✉️ 直接联系创始团队 (pilot@microintern.sg)
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
   </main>
 
-  <!-- Minimal Footer -->
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <span><strong>MicroIntern.sg</strong> — <span data-i18n="footer_sub">Singapore's Proof-of-Work Micro-Internship Platform</span></span>
-      <span><a href="mailto:pilot@microintern.sg">pilot@microintern.sg</a></span>
+  <!-- Clean Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <span class="footer-brand">MicroIntern<span class="tld">.sg</span></span>
+        <span class="footer-sep">•</span>
+        <span data-i18n="footer_rights">新加坡工作量证明微实习试点平台</span>
+      </div>
+      <div class="footer-right">
+        <span>Kent Ridge & Tanjong Pagar, Singapore</span>
+        <span class="footer-sep">•</span>
+        <a href="mailto:pilot@microintern.sg">pilot@microintern.sg</a>
+      </div>
     </div>
   </footer>
 
   <!-- Toast -->
-  <div id="toast" class="toast-card" role="alert">
-    <span id="toast-text">Success</span>
+  <div id="toast" class="toast" role="alert" aria-live="assertive">
+    <span id="toast-message">操作已成功</span>
   </div>
 
-  <script src="app.js?v=1.4.0"></script>
+  <script src="app.js?v=2.0.0"></script>
 </body>
 </html>

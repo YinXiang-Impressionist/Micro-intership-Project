@@ -1,6 +1,6 @@
 /**
- * MicroIntern SG — 一份真实的微实习，胜过千言万语的简历
- * "Experience the Real Workflow. Prove Real Competence. Start the Conversation."
+ * MicroIntern SG — 真实的微实习，看清真实的工作契合度
+ * "Evaluate real workflows. Eliminate hiring guesswork."
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -13,52 +13,52 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_join_link: "Join Pilot",
       nav_cta: "Join Pilot",
 
-      hero_pill: "SINGAPORE MICRO-INTERNSHIP NETWORK",
-      hero_line1: "The resume is dead.",
-      hero_line2: "Complete a real micro-internship.",
-      hero_sub: "A micro-internship is not just a single isolated task. Singapore SMEs post lightweight internships covering actual daily workflows — allowing students to experience real job routines, and enabling employers to evaluate true on-the-job competence.",
-      motto_text: "\"Experience the Real Workflow. Prove Real Competence. Start the Conversation.\"",
+      hero_pill: "SINGAPORE MICRO-INTERNSHIP PILOT",
+      hero_line1: "A resume doesn't tell the whole story.",
+      hero_line2: "Experience the real daily work.",
+      hero_sub: "A pragmatic platform connecting Singapore SMEs with university talent. Experience a company's genuine daily work routine before making a long-term commitment.",
+      motto_text: "\"Evaluate real workflows. Eliminate hiring guesswork.\"",
 
       pain_sme_who: "FOR SINGAPORE SMES & FOUNDERS",
-      pain_sme_title: "A resume proves nothing. A micro-internship reveals everything.",
-      pain_sme_desc: "Interviews and AI-written resumes fail to show how a candidate navigates your daily workflows. Traditional hiring is an expensive gamble. With MicroIntern SG, you post a real micro-internship covering your routine processes — evaluating practical execution without upfront payroll risk.",
+      pain_sme_title: "What is your biggest risk when hiring an intern?",
+      pain_sme_desc: "Candidates often interview well, but you only discover whether they can handle your daily workflow after weeks of onboarding. MicroIntern SG lets you post a genuine daily routine workflow upfront. Review actual execution before committing your team's time.",
 
       pain_stu_who: "FOR NUS, NTU & SMU STUDENTS",
-      pain_stu_title: "Don't be a cold applicant. Complete a verified micro-internship.",
-      pain_stu_desc: "Job portals demand prior experience while keeping daily work a mystery. Take on a company's genuine micro-internship, immerse yourself in their actual business routines, and produce verified work that speaks louder than any resume.",
+      pain_stu_title: "Stuck behind the \"prior experience\" barrier?",
+      pain_stu_desc: "Entry-level postings demand prior internships, and standard applications rarely give you a chance to demonstrate your practical ability. Complete a company's real micro-internship, deliver tangible work, and put your capabilities directly in front of the team.",
 
-      flow_kicker: "THE REALITY ENGINE",
+      flow_kicker: "THE PRACTICAL ENGINE",
       flow_title: "How a Micro-Internship Works",
-      flow_desc: "A structured, mutually beneficial workflow designed for Singapore's local business and university ecosystem.",
-      step1_head: "SME Posts a Micro-Internship (Free)",
-      step1_body: "The company packages their actual daily workflow into a focused micro-internship (covering business context, execution, and review). <strong>Free to post. Zero payroll obligation.</strong> You do not pay each applicant.",
-      step2_head: "Students Walk Through Real Workflows",
-      step2_body: "Students take on the micro-internship, experiencing the company's real standards and operational rhythms across multiple steps. Every deliverable becomes tangible proof in their portfolio.",
-      step3_head: "Evaluate Workflow Fit & Connect",
-      step3_body: "Employers evaluate how candidates perform across the actual routine processes. When there is mutual alignment, both sides connect for a coffee chat or formalize an internship offer.",
+      flow_desc: "A realistic two-way evaluation built for Singapore's local business environment.",
+      step1_head: "SME Posts a Routine Micro-Internship (Free)",
+      step1_body: "Package a standard routine workflow (e.g. data cleaning, onboarding funnel analysis, or content drafting) into a short micro-internship. <strong>Free to post. Zero upfront payroll commitment.</strong>",
+      step2_head: "Students Walk Through the Real Workflow",
+      step2_body: "Students take on the micro-internship, experiencing the company's actual business rhythm and standards. Completed deliverables become verified work samples in their portfolio.",
+      step3_head: "Review Fit & Connect Directly",
+      step3_body: "The employer sees who genuinely fits their day-to-day operations. When there is mutual alignment, both sides connect directly for coffee, a chat, or a formal internship offer.",
 
-      cases_kicker: "PROVEN TRACK RECORD",
-      cases_title: "Two Real Micro-Internship Samples",
+      cases_kicker: "PRAGMATIC PROOFS",
+      cases_title: "Two Real Micro-Internship Examples",
       tab1_btn: "PayBridge SEA (Product Operations)",
       tab2_btn: "OmniSupply AI (Data Engineering)",
       
       c1_sub: "Cross-border payments SME • Tanjong Pagar",
       c1_duration_tag: "Micro-Internship",
-      c1_task_lbl: "Daily Workflow Routine:",
-      c1_task_val: "Walk through the company's weekly KYC operations: review raw session drop-off logs, analyze Singpass business sync errors, and draft product improvements.",
+      c1_task_lbl: "Routine Workflow Process:",
+      c1_task_val: "Review weekly onboarding event logs, identify friction points for Indonesian business users during Singpass verification, and propose practical low-code improvements.",
       c1_sol_lbl: "Student Execution (Darren, NUS Y1):",
-      c1_sol_val: "Completed the full operational loop: diagnosed entity mismatch patterns and delivered low-code fallback upload mockups with OCR preview.",
+      c1_sol_val: "Walked through the complete operational logic: diagnosed corporate entity mismatch errors and delivered clean fallback upload mockups with OCR preview.",
       c1_out_auth: "Mutual Fit Outcome:",
-      c1_out_val: "Darren experienced real fintech product routines; the COO saw he could handle daily analytics independently. Offered a part-time Product Analyst role within 48 hours.",
+      c1_out_val: "Darren experienced real fintech operations; the COO confirmed he could handle routine analytics independently. Hired as a part-time Product Analyst.",
 
       c2_sub: "Supply chain automation • Jurong Innovation District",
       c2_duration_tag: "Micro-Internship",
-      c2_task_lbl: "Daily Workflow Routine:",
-      c2_task_val: "Ingest non-standard supplier invoice PDFs, build extraction scripts following team standards, and write automated tests for edge-case billing variations.",
+      c2_task_lbl: "Routine Workflow Process:",
+      c2_task_val: "Maintain the daily data pipeline: review non-standard supplier invoice formats, build extraction regex scripts, and write unit tests for edge-case variations.",
       c2_sol_lbl: "Student Execution (Siddharth, NTU Y1):",
-      c2_sol_val: "Handled the end-to-end data pipeline: clean Python code, regex rule architecture, and 15 rigorous unit tests adhering to internal git conventions.",
+      c2_sol_val: "Completed the end-to-end task according to team coding guidelines, writing clean Python code and 15 tests covering edge-case invoice structures.",
       c2_out_auth: "Mutual Fit Outcome:",
-      c2_out_val: "Siddharth verified that he thrived in the engineering stack; the CTO confirmed he was sprint-ready from day one. Formal semester internship contract issued.",
+      c2_out_val: "Siddharth confirmed he enjoyed the team's engineering stack, while the CTO verified he could contribute to regular sprint cycles from day one. Formal internship offered.",
 
       join_kicker: "PILOT COHORT 01",
       join_title: "Join the MicroIntern SG Pilot",
@@ -73,56 +73,56 @@ document.addEventListener('DOMContentLoaded', () => {
     zh: {
       nav_brand_sub: "新加坡",
       nav_how: "运作机制",
-      nav_cases: "微实习样本",
+      nav_cases: "微实习档案",
       nav_join_link: "入驻试点",
       nav_cta: "入驻试点",
 
       hero_pill: "新加坡微实习（MICRO-INTERNSHIP）试点网络",
-      hero_line1: "传统简历已经失效。",
-      hero_line2: "来完成一份真实的微实习。",
-      hero_sub: "微实习不只是孤立的单一打杂任务。新加坡中小企业将真实的日常工作全流程提炼为一份份轻量微实习——让学生完整体验实际工作流程与团队节奏，让企业多维度看清候选人面对日常业务的真实胜任力。",
-      motto_text: "“体验真实工作全貌。证明日常业务素养。开启深度合作。”",
+      hero_line1: "一份纸面简历，说明不了真实的工作能力。",
+      hero_line2: "亲身跑一次真实日常工作，看清真正的适配度。",
+      hero_sub: "专为新加坡中小企业与顶尖学子打造的务实微实习平台。企业开放日常业务流程，学生积累真实项目背书。在正式做出雇佣承诺之前，先通过真实的日常业务互相验证。",
+      motto_text: "“不靠面试盲猜，用日常流程的真实表现说话。”",
 
-      pain_sme_who: "致新加坡中小企业与雇主",
-      pain_sme_title: "一份简历证明不了任何事，但一份微实习可以。",
-      pain_sme_desc: "面试聊得天花乱坠、AI 润色的简历天衣无缝，但根本看不出候选人面对真实工作流程的执行力。在 MicroIntern SG，企业免费发布一份微实习，涵盖团队日常工作的核心流程，无需背负长期用工包袱，直接看清候选人在真实业务各环节中的真实水准。",
+      pain_sme_who: "致新加坡中小企业雇主",
+      pain_sme_title: "你招实习生，最怕的是什么？",
+      pain_sme_desc: "候选人面试对答如流、简历写得光鲜亮丽，但带教一个月才发现对方连团队日常业务都无法独立上手。传统的招聘往往是一场单向试错。在 MicroIntern SG，企业免费发布一份日常微实习，先看候选人处理你日常业务流程的实际水准，合适再进一步沟通。",
 
       pain_stu_who: "致 NUS、NTU 与 SMU 高校学子",
-      pain_stu_title: "不要做无休止的海投分母，来经历一次真实的微实习。",
-      pain_stu_desc: "招聘网站要求的“名企经验”是一道冰冷的门槛，而日常工作内容对你而言更像一个盲盒。认领一份企业的真实微实习，完整经历实际业务流程，做出一套扎实的成果——这远比任何美化的纸面简历都有说服力。",
+      pain_stu_title: "想找实习，但总卡在“缺乏经验”？",
+      pain_stu_desc: "大一大二求职最大的困境，就是几乎所有岗位都生硬要求“过往名企经验”，精心修改的简历往往在系统初筛就被拦截。认领一份真实企业的微实习，走完一套真实的日常工作流程，直接把扎实的交付成果交到业务负责人手中，靠实操能力争取一次平等的交流机会。",
 
-      flow_kicker: "真实业务飞轮",
+      flow_kicker: "务实双赢闭环",
       flow_title: "一份微实习如何运作？",
-      flow_desc: "一套让企业与学生在真实业务流程中互相建立信任的双向机制：",
-      step1_head: "企业发布一份微实习（完全免费）",
-      step1_body: "企业将日常业务中的核心工作流程（从业务理解、方案构建到成果验证）整合为一份微实习。<strong>完全免费发布，无需向每位申请者付费</strong>，零用工门槛。",
-      step2_head: "学生经历完整日常流程并交付",
-      step2_body: "来自本地名校的学子认领微实习，亲历企业真实的工作标准与协同节奏。<strong>完成微实习的每一个步骤，都成为个人简历中极具含金量的实战证明</strong>。",
-      step3_head: "全面评估流程契合度，直发 Offer",
-      step3_body: "企业全方位检视学生在各个业务环节的表现与专业素养。双方确认彼此真正契合后，企业主动约线下喝咖啡面聊，发放正式实习 Offer。",
+      flow_desc: "一套让企业与学生在真实业务中建立信任的务实机制：",
+      step1_head: "企业发布一份日常微实习（免费）",
+      step1_body: "将团队日常业务中的一个真实流程（如数据清洗归档、用户开户漏斗排查、内容起草）梳理为一份微实习。<strong>完全免费发布，无需对每位申请者付费</strong>，零用工负担。",
+      step2_head: "学生经历真实日常流程并交付",
+      step2_body: "学生沉浸式经历这家企业的实际业务节奏与交付标准。按规范完成的每份成果，都是个人履历中具有说服力的实战背书。",
+      step3_head: "检验真实契合度，开启深入沟通",
+      step3_body: "企业清晰看清谁能真正融入团队的日常业务，学生也确认了自己是否喜欢这份工作。双方契合，直接约线下喝咖啡、聊合作或发正式实习。",
 
-      cases_kicker: "真实样本",
-      cases_title: "两份真实微实习档案",
+      cases_kicker: "实操案例",
+      cases_title: "两份真实微实习样本",
       tab1_btn: "PayBridge SEA（产品运营微实习）",
       tab2_btn: "OmniSupply AI（数据工程微实习）",
 
       c1_sub: "跨境支付初创企业 • 丹戎巴葛",
       c1_duration_tag: "真实微实习",
       c1_task_lbl: "微实习涵盖流程：",
-      c1_task_val: "完整经历产品运营闭环：从调阅上周用户开户流失日志 ➔ 拆解 Singpass 企业端校验错误 ➔ 输出兼顾合规与体验的低代码备用方案。",
+      c1_task_val: "梳理上周真实用户开户日志，排查印尼籍企业客户在 Singpass 验证中的高频报错环节，并输出兼顾合规与体验的低代码备选上传方案。",
       c1_sol_lbl: "学生实际执行表现（Darren，NUS 大一）：",
-      c1_sol_val: "展现出对真实业务场景的高效理解力，不仅精准锁定了实体不匹配诱因，还输出了带即时 OCR 预览的原型草案。",
-      c1_out_auth: "双向奔赴结果：",
-      c1_out_val: "Darren 完整体验了金融科技产品运营的日常；COO 确认他具备独立处理业务流程的能力，48 小时内直接发放兼职产品分析师 Offer。",
+      c1_sol_val: "逻辑严密、迅速理清了企业实体校验规则，不仅找出了流失诱因，还绘制了带有即时 OCR 扫描预览的交互线框图。",
+      c1_out_auth: "双方适配结果：",
+      c1_out_val: "Darren 确认了自己对金融科技产品日常分析很感兴趣；COO 确认他具备独立处理日常业务的能力，当周录用为兼职产品分析师。",
 
       c2_sub: "供应链自动化 SaaS • 裕廊创新区",
       c2_duration_tag: "真实微实习",
       c2_task_lbl: "微实习涵盖流程：",
-      c2_task_val: "完整走完数据管道开发流程：理解非标准供应商发票数据规范 ➔ 编写健壮正则提取管道 ➔ 编写内部标准单元测试覆盖边缘异常。",
+      c2_task_val: "维护数据接入管道：阅读非规范发票数据样例，编写模块化提取规则，并按照团队工程规范编写覆盖边缘异常的单元测试。",
       c2_sol_lbl: "学生实际执行表现（Siddharth，NTU 大一）：",
-      c2_sol_val: "端到端完成数据工程全流程：代码干净优雅，测试覆盖全面，完全契合团队内部的工程交付标准与 Git 规范。",
-      c2_out_auth: "双向奔赴结果：",
-      c2_out_val: "Siddharth 提前熟悉了团队的技术栈与工作习惯，CTO 确认他能无缝跟进日常迭代，直接发放下学期正式实习合同。",
+      c2_sol_val: "代码规范严格遵守团队的 PEP8 与 Git 提交习惯，编写了 15 个异常用例测试，完全达到团队内部的日常工程交付标准。",
+      c2_out_auth: "双方适配结果：",
+      c2_out_val: "Siddharth 熟悉了团队的技术栈，CTO 确认他能无缝跟进日常迭代节奏，直接发放下学期的正式实习合同。",
 
       join_kicker: "首期先锋入驻",
       join_title: "加入 MicroIntern SG 试点网络",
@@ -157,10 +157,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     langLabel.textContent = lang === 'en' ? '中文 (ZH)' : 'English (EN)';
-    localStorage.setItem('microintern_lang_v7', lang);
+    localStorage.setItem('microintern_lang_v8', lang);
   }
 
-  const savedLang = localStorage.getItem('microintern_lang_v7') || 'en';
+  const savedLang = localStorage.getItem('microintern_lang_v8') || 'en';
   if (savedLang === 'zh') {
     updatePageLanguage('zh');
   }

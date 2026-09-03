@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
   <title>MicroIntern SG — 真实的微实习，看清真实的工作契合度</title>
   <meta name="description" content="Singapore's first proof-of-work micro-internship platform. Connecting Singapore SMEs with university talent through real routine workflows." />
   
@@ -11,15 +11,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="styles.css?v=2.0.0" />
+  <link rel="stylesheet" href="styles.css?v=2.1.0" />
 </head>
-<body data-lang="en">
+<body data-lang="zh">
 
   <!-- Top Announcement Bar -->
   <aside class="top-announcement">
     <div class="announcement-content">
       <span class="badge badge-amber" data-i18n="announcement_badge">先行者第一期</span>
-      <span data-i18n="announcement_text">现已开放新加坡中小企业雇主与 NUS / NTU / SMU 高校学子入驻申请。</span>
+      <span class="announcement-text" data-i18n="announcement_text">现已开放新加坡中小企业雇主与 NUS / NTU / SMU 高校学子入驻申请。</span>
       <a href="#vanguard-section" class="announcement-link" data-i18n="announcement_cta">申领先锋通行证 →</a>
     </div>
   </aside>
@@ -45,7 +45,7 @@
           <span>🌐</span>
           <span id="current-lang-label">English (EN)</span>
         </button>
-        <a href="#vanguard-section" class="btn btn-sm btn-primary" data-i18n="nav_cta">加入先锋计划</a>
+        <a href="#vanguard-section" class="btn btn-sm btn-primary nav-cta-btn" data-i18n="nav_cta">加入先锋计划</a>
       </div>
     </div>
   </header>
@@ -116,8 +116,7 @@
         <div class="section-header-centered">
           <span class="badge badge-purple section-tag" data-i18n="manifesto_badge">核心认知</span>
           <h2 class="section-title" data-i18n="manifesto_title">
-            招聘本该是对日常胜任力的双向验证。<br>
-            现实中却成了 AI 润色与纸面简历的军备竞赛。
+            招聘本该是对日常胜任力的双向验证。<br>现实中却成了 AI 润色与纸面简历的军备竞赛。
           </h2>
           <p class="section-subtitle" data-i18n="manifesto_subtitle">
             企业看纸面简历猜人，入职带教一个月才发现候选人根本适应不了日常工作；学生被生硬的“过往经验门槛”拦截，连展示实操手艺的机会都没有。
@@ -470,7 +469,7 @@
                 <p style="font-size: 0.92rem; color: var(--ink-secondary); line-height: 1.6; margin-bottom: 0.75rem;" data-i18n="next_step_desc">
                   我们已为您锁定首期名额！创始团队将在 24 小时内与您联络；您也可直接发送您的微实习岗位设想或简历作品至官方邮箱：
                 </p>
-                <a href="mailto:pilot@microintern.sg?subject=MicroIntern%20SG%20Pilot%20Inquiry" class="btn btn-sm btn-secondary" style="display: inline-block;">
+                <a href="mailto:pilot@microintern.sg?subject=MicroIntern%20SG%20Pilot%20Inquiry" class="btn btn-sm btn-secondary direct-contact-btn">
                   ✉️ 直接联系创始团队 (pilot@microintern.sg)
                 </a>
               </div>
@@ -504,6 +503,6 @@
     <span id="toast-message">操作已成功</span>
   </div>
 
-  <script src="app.js?v=2.0.0"></script>
+  <script src="app.js?v=2.1.0"></script>
 </body>
 </html>

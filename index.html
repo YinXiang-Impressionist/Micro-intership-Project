@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MicroIntern SG — Get the Real Work Done. Impress the Company. Land the Offer.</title>
+  <meta name="description" content="Singapore's first proof-of-work micro-internship network. Bypass the broken resume lottery with 2-6 hour real-world SME business challenges. Built for NUS/NTU talent and forward-thinking Singapore companies." />
+  
+  <!-- Fonts: Space Grotesk & Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-lang="en">
+
+  <!-- Top Announcement Bar -->
+  <aside class="top-announcement">
+    <div class="announcement-content">
+      <span class="badge badge-yellow" data-i18n="announcement_badge">PILOT COHORT 01</span>
+      <span data-i18n="announcement_text">Now accepting Singapore SME pilot partners & NUS / NTU / SMU students. Zero placement fees.</span>
+      <a href="#vanguard-section" class="announcement-link" data-i18n="announcement_cta">Claim Vanguard Pass →</a>
+    </div>
+  </aside>
+
+  <!-- Sticky Main Navbar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">
+        <span class="logo-box">μ</span>
+        <span class="logo-text">MicroIntern<span class="tld">.sg</span></span>
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="#manifesto" data-i18n="nav_manifesto">The Manifesto</a>
+        <a href="#memo-founders" data-i18n="nav_for_smes">For SMEs</a>
+        <a href="#memo-students" data-i18n="nav_for_students">For Students</a>
+        <a href="#proof-vault" data-i18n="nav_vault">Proof Vault</a>
+        <a href="#comparison" data-i18n="nav_comparison">The Cold Truth</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Language Switcher -->
+        <button id="lang-toggle-btn" class="btn btn-sm btn-outline" aria-label="Toggle language">
+          <span class="lang-icon">🌐</span>
+          <span id="current-lang-label">中文 (ZH)</span>
+        </button>
+        <a href="#vanguard-section" class="btn btn-sm btn-primary" data-i18n="nav_cta">Get Early Access</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Hero Section -->
+  <main>
+    <section class="hero-section">
+      <div class="hero-container">
+        
+        <div class="hero-header-tags">
+          <span class="tag-pill tag-pill-coral" data-i18n="hero_pill_1">SINGAPORE ECOSYSTEM VANGUARD</span>
+          <span class="tag-pill tag-pill-lime" data-i18n="hero_pill_2">ZERO RESUME GAMBLING</span>
+        </div>
+
+        <h1 class="hero-headline">
+          <span class="line-1" data-i18n="hero_h1_line1">The Traditional Resume is Dead.</span>
+          <span class="line-2 highlight-yellow" data-i18n="hero_h1_line2">Deliver Proof. Win the Offer.</span>
+        </h1>
+
+        <p class="hero-subdeck" data-i18n="hero_subdeck">
+          Singapore's first <strong>Proof-of-Work Micro-Internship Platform</strong>. SMEs post 2–6 hour real-world business challenges. Top university talent delivers tangible execution. No recruitment noise, no keyword gaming — just real work recognized and rewarded.
+        </p>
+
+        <!-- Slogan Stamped Banner -->
+        <div class="slogan-stamp-card">
+          <div class="stamp-icon">⚡</div>
+          <div class="stamp-text">
+            <span class="stamp-label" data-i18n="stamp_label">THE 3-STEP REALITY PROTOCOL</span>
+            <span class="stamp-motto" data-i18n="stamp_motto">Get the Real Work Done. Impress the Company. Land the Offer.</span>
+          </div>
+        </div>
+
+        <!-- Quick Audience Nav Anchor Buttons -->
+        <div class="hero-cta-group">
+          <a href="#memo-founders" class="btn btn-lg btn-black">
+            <span data-i18n="cta_sme_btn">Read the Memo for SME Founders ↓</span>
+          </a>
+          <a href="#memo-students" class="btn btn-lg btn-accent">
+            <span data-i18n="cta_student_btn">Read the Memo for Students ↓</span>
+          </a>
+          <a href="#proof-vault" class="btn btn-lg btn-outline">
+            <span data-i18n="cta_inspect_btn">Inspect 3 Live Cases 👁️</span>
+          </a>
+        </div>
+
+        <!-- Metric Scoreboard Banner -->
+        <div class="metric-scoreboard">
+          <div class="metric-box">
+            <span class="metric-num">95%</span>
+            <span class="metric-desc" data-i18n="stat_1">SME resumes filtered due to AI spam</span>
+          </div>
+          <div class="metric-divider">/</div>
+          <div class="metric-box">
+            <span class="metric-num">4.2 hrs</span>
+            <span class="metric-desc" data-i18n="stat_2">Avg time to complete a Micro-Internship</span>
+          </div>
+          <div class="metric-divider">/</div>
+          <div class="metric-box">
+            <span class="metric-num">89%</span>
+            <span class="metric-desc" data-i18n="stat_3">Top deliverers offered formal interviews</span>
+          </div>
+          <div class="metric-divider">/</div>
+          <div class="metric-box">
+            <span class="metric-num">$0</span>
+            <span class="metric-desc" data-i18n="stat_4">Upfront headhunting fee for pilot SMEs</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: THE MANIFESTO / THE CORE PROBLEM -->
+    <section id="manifesto" class="section manifesto-section">
+      <div class="content-container">
+        
+        <div class="section-label">
+          <span class="badge badge-black" data-i18n="manifesto_badge">THE MACRO MANIFESTO</span>
+        </div>
+
+        <h2 class="section-title" data-i18n="manifesto_title">
+          Hiring Was Meant to Be a Handshake Over Capability.<br>
+          Instead, It Became an AI-Powered Arms Race.
+        </h2>
+
+        <div class="editorial-body">
+          <p class="lead-paragraph" data-i18n="manifesto_p1">
+            Let us state the uncomfortable truth plainly: <strong>The 1-page PDF resume has completely collapsed as a signal of competence.</strong>
+          </p>
+          <p data-i18n="manifesto_p2">
+            In 2026, any student can generate a flawless, buzzword-dense resume in thirty seconds using large language models. Meanwhile, corporate Applicant Tracking Systems (ATS) reject 90% of applicants purely based on arbitrary keyword filters.
+          </p>
+          <div class="quote-callout">
+            <div class="quote-border-decor"></div>
+            <blockquote data-i18n="manifesto_quote">
+              "We have built a job market where great students spend hundreds of hours formatting bullet points, and founders spend hundreds of hours interviewing candidates who cannot write a single cohesive query or draft a basic customer cohort analysis."
+            </blockquote>
+          </div>
+          <p data-i18n="manifesto_p3">
+            Singapore’s economy runs on <strong>150,000+ Small and Medium Enterprises (SMEs)</strong> that drive 70% of local employment. These companies do not have six-figure HR budgets or time for three-month interview pipelines. They have immediate, high-leverage business bottlenecks. And across Kent Ridge (NUS), Jurong West (NTU), and Bras Basah (SMU), tens of thousands of hungry, hyper-capable students are waiting for a chance to prove they can solve them.
+          </p>
+          <p class="bold-conclusion" data-i18n="manifesto_p4">
+            <strong>MicroIntern SG is the bridge. We replace the paper lottery with Proof-of-Work.</strong>
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: DUAL OPEN MEMO CHAPTER I - FOR SME FOUNDERS -->
+    <section id="memo-founders" class="section memo-section memo-sme-theme">
+      <div class="content-container">
+        
+        <div class="memo-wrapper card-brutal">
+          
+          <div class="memo-meta-header">
+            <div class="memo-meta-col">
+              <span class="meta-title" data-i18n="memo1_meta_to">DOCUMENT RECIPIENT:</span>
+              <span class="meta-val" data-i18n="memo1_meta_to_val">Singapore SME Founders, Managing Directors & Team Leads</span>
+            </div>
+            <div class="memo-meta-col">
+              <span class="meta-title" data-i18n="memo1_meta_from">ISSUED BY:</span>
+              <span class="meta-val">MicroIntern SG Core Architecture Group</span>
+            </div>
+            <div class="memo-meta-col">
+              <span class="meta-title" data-i18n="memo1_meta_class">CLASSIFICATION:</span>
+              <span class="meta-val badge badge-yellow" data-i18n="memo1_meta_class_val">COMMERCIAL ADVISORY</span>
+            </div>
+          </div>
+
+          <div class="memo-content">
+            <div class="memo-badge-row">
+              <span class="tag-pill tag-pill-black">CHAPTER 01</span>
+              <span class="tag-pill tag-pill-lime" data-i18n="memo1_tag">THE FOUNDER'S EQUATION</span>
+            </div>
+
+            <h2 class="memo-title" data-i18n="memo1_heading">
+              Stop Reading 300 ChatGPT-Polished Resumes.<br>
+              Post a 4-Hour Micro-Challenge and Inspect Real Output.
+            </h2>
+
+            <div class="memo-paragraphs">
+              <p data-i18n="memo1_p1">
+                Dear Founder: Every time you open a job posting on traditional job boards, you are effectively signing up for an unpaid full-time job as a resume filter. You wade through hundreds of identical CVs boasting of "strategic synergy" and "growth leadership." You pick five, conduct two rounds of interviews, extend an offer, and four weeks later discover they struggle to execute a basic SQL join or write an authentic Singapore B2B email sequence.
+              </p>
+
+              <div class="founder-pain-cards">
+                <div class="pain-card">
+                  <div class="card-tag" data-i18n="pain_1_tag">THE TRADITIONAL RISK</div>
+                  <h3 data-i18n="pain_1_title">The 3-Month Probation Trap</h3>
+                  <p data-i18n="pain_1_desc">You risk 3 months of intern allowance ($1,200–$1,800/mo) and senior team bandwidth on someone who looked brilliant on a PDF but freezes in front of actual work.</p>
+                </div>
+
+                <div class="pain-card pain-card-solution">
+                  <div class="card-tag" data-i18n="pain_2_tag">THE MICROINTERN ARBITRAGE</div>
+                  <h3 data-i18n="pain_2_title">4-Hour Proof of Competence</h3>
+                  <p data-i18n="pain_2_desc">Turn a real backlogged task (market scan, data cleaning, customer audit) into a self-contained micro-task. You only review tangible deliverables. If it’s stellar, hire them with 100% confidence.</p>
+                </div>
+              </div>
+
+              <h3 class="subsection-header" data-i18n="memo1_subheading">How It Works for Your Business:</h3>
+              <ol class="brutal-list">
+                <li>
+                  <strong><span data-i18n="sme_step1_title">1. Define a 2–6 Hour Scoped Deliverable:</span></strong>
+                  <span data-i18n="sme_step1_desc">Not open-ended busywork, but a focused challenge. E.g., "Analyze our Southeast Asia checkout drop-off data" or "Scrape and categorize 150 Singapore F&B suppliers."</span>
+                </li>
+                <li>
+                  <strong><span data-i18n="sme_step2_title">2. Students Execute Under Strict Constraints:</span></strong>
+                  <span data-i18n="sme_step2_desc">Vetted undergrads from NUS, NTU, and SMU claim the task and submit structured outputs within 48 hours.</span>
+                </li>
+                <li>
+                  <strong><span data-i18n="sme_step3_title">3. Keep the Asset, Extend the Offer:</span></strong>
+                  <span data-i18n="sme_step3_desc">Regardless of hiring, your company keeps the finished deliverable. If the student’s thinking wows your leadership, invite them straight to a formal internship. No recruiter cuts, zero fluff.</span>
+                </li>
+              </ol>
+
+              <div class="memo-callout-box">
+                <span class="callout-lead" data-i18n="sme_callout">"You don't hire a chef by reading their essay about culinary theory. You taste the soup. MicroIntern gives you the soup before you sign the contract."</span>
+              </div>
+
+              <div class="memo-action-footer">
+                <a href="#vanguard-section" class="btn btn-black" data-i18n="sme_action_btn">Register as a Pilot SME Partner →</a>
+                <span class="subtext" data-i18n="sme_action_subtext">Takes 60 seconds. Our engineering team assists with task scoping.</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: DUAL OPEN MEMO CHAPTER II - FOR STUDENTS -->
+    <section id="memo-students" class="section memo-section memo-student-theme">
+      <div class="content-container">
+        
+        <div class="memo-wrapper card-brutal card-student">
+          
+          <div class="memo-meta-header">
+            <div class="memo-meta-col">
+              <span class="meta-title" data-i18n="memo2_meta_to">DOCUMENT RECIPIENT:</span>
+              <span class="meta-val" data-i18n="memo2_meta_to_val">University Freshmen, Undergrads & Ambitious International Students</span>
+            </div>
+            <div class="memo-meta-col">
+              <span class="meta-title" data-i18n="memo2_meta_from">ISSUED BY:</span>
+              <span class="meta-val">MicroIntern SG Student Advocate Coalition</span>
+            </div>
+            <div class="memo-meta-col">
+              <span class="meta-title" data-i18n="memo2_meta_class">CLASSIFICATION:</span>
+              <span class="meta-val badge badge-coral" data-i18n="memo2_meta_class_val">CAREER BREAKTHROUGH</span>
+            </div>
+          </div>
+
+          <div class="memo-content">
+            <div class="memo-badge-row">
+              <span class="tag-pill tag-pill-black">CHAPTER 02</span>
+              <span class="tag-pill tag-pill-yellow" data-i18n="memo2_tag">THE STUDENT'S PRISON BREAK</span>
+            </div>
+
+            <h2 class="memo-title" data-i18n="memo2_heading">
+              Trapped in the "Need Experience to Get Experience" Loop?<br>
+              Break the Lock with Irrefutable Proof-of-Work.
+            </h2>
+
+            <div class="memo-paragraphs">
+              <p data-i18n="memo2_p1">
+                You walked onto campus at Kent Ridge, Jurong West, or Bras Basah full of ambition. You opened LinkedIn or JobStreet, clicked on a dozen "Entry-Level Internship" postings, and hit a concrete wall:
+                <em class="highlight-inline">"Requires 1–2 prior internships and 2+ years of relevant industry experience."</em>
+              </p>
+              <p data-i18n="memo2_p2">
+                It is an insulting paradox. How are you supposed to gain your first real-world internship if every single internship demands that you already have one?
+              </p>
+
+              <div class="comparison-grid-2">
+                <div class="student-box student-box-dark">
+                  <div class="box-status badge badge-coral" data-i18n="box_old_badge">THE OLD RESUME GRIND</div>
+                  <ul>
+                    <li data-i18n="box_old_1">Cold-applying to 150 companies with a template CV</li>
+                    <li data-i18n="box_old_2">Discarded in 4 seconds by an automated keyword bot</li>
+                    <li data-i18n="box_old_3">Zero actionable feedback, 100% emotional burnout</li>
+                    <li data-i18n="box_old_4">Wasting freshman summer doing theoretical coursework</li>
+                  </ul>
+                </div>
+
+                <div class="student-box student-box-bright">
+                  <div class="box-status badge badge-lime" data-i18n="box_new_badge">THE MICROINTERN PROTOCOL</div>
+                  <ul>
+                    <li data-i18n="box_new_1">Pick a 2–6 hour real business task aligned with your craft</li>
+                    <li data-i18n="box_new_2">Do deep, exceptional work that directly solves an SME problem</li>
+                    <li data-i18n="box_new_3">Your deliverable lands directly on the Founder/Lead's desk</li>
+                    <li data-i18n="box_new_4">Earn task honorariums, verified portfolio assets, and direct offers</li>
+                  </ul>
+                </div>
+              </div>
+
+              <h3 class="subsection-header" data-i18n="memo2_subheading">What Happens When You Ship:</h3>
+              <div class="deliverable-trio">
+                <div class="trio-item">
+                  <div class="trio-icon">📁</div>
+                  <h4 data-i18n="trio1_title">Verifiable Proof Portfolio</h4>
+                  <p data-i18n="trio1_desc">No more hypothetical classroom assignments. You gain live commercial deliverables with timestamps and signed employer testimonials.</p>
+                </div>
+                <div class="trio-item">
+                  <div class="trio-icon">🤝</div>
+                  <h4 data-i18n="trio2_title">Founder Direct Line</h4>
+                  <p data-i18n="trio2_desc">Skip the gatekeeping HR intern. If your deliverable creates business value, Singapore founders reach out to you directly.</p>
+                </div>
+                <div class="trio-item">
+                  <div class="trio-icon">⏱️</div>
+                  <h4 data-i18n="trio3_title">Zero Academic Conflicts</h4>
+                  <p data-i18n="trio3_desc">Tasks take 3–5 hours on weekends. You build prestige and earn cash honorariums without compromising your semester GPA.</p>
+                </div>
+              </div>
+
+              <div class="memo-action-footer">
+                <a href="#vanguard-section" class="btn btn-black" data-i18n="student_action_btn">Claim Your Student Vanguard Pass →</a>
+                <span class="subtext" data-i18n="student_action_subtext">Open to all Singapore tertiary students (NUS, NTU, SMU, SUTD, SIT, Poly).</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: INTERACTIVE PROOF VAULT (3 REAL-WORLD CASES) -->
+    <section id="proof-vault" class="section vault-section">
+      <div class="content-container">
+        
+        <div class="section-label">
+          <span class="badge badge-yellow" data-i18n="vault_badge">INTERACTIVE PROOF VAULT</span>
+        </div>
+
+        <h2 class="section-title" data-i18n="vault_title">
+          See What "Proof-of-Work" Actually Looks Like.<br>
+          3 Real Micro-Tasks. Real Outputs. Direct Offers.
+        </h2>
+
+        <p class="section-subtitle" data-i18n="vault_subtitle">
+          Click through each micro-challenge below to inspect how a 3–4 hour task transformed a student from an "untested freshman" into an indispensable hire.
+        </p>
+
+        <!-- Case Tabs -->
+        <div class="vault-tabs" role="tablist">
+          <button class="tab-btn active" data-case="case1" role="tab" aria-selected="true">
+            <span class="tab-badge">CASE 01</span>
+            <span class="tab-label" data-i18n="case1_tab">Fintech User Funnel Audit</span>
+          </button>
+          <button class="tab-btn" data-case="case2" role="tab" aria-selected="false">
+            <span class="tab-badge">CASE 02</span>
+            <span class="tab-label" data-i18n="case2_tab">AI Data Cleaning Automation</span>
+          </button>
+          <button class="tab-btn" data-case="case3" role="tab" aria-selected="false">
+            <span class="tab-badge">CASE 03</span>
+            <span class="tab-label" data-i18n="case3_tab">TikTok SEA Go-To-Market Script</span>
+          </button>
+        </div>
+
+        <!-- Case 1 Card -->
+        <article class="case-card card-brutal active" id="case1-panel">
+          <div class="case-header">
+            <div class="company-info">
+              <span class="company-logo">💳</span>
+              <div>
+                <h3 class="company-name">PayBridge SEA (Singapore SME)</h3>
+                <span class="company-meta" data-i18n="case1_company_meta">Cross-Border Payments • Series A • 28 Staff • Tanjong Pagar</span>
+              </div>
+            </div>
+            <div class="task-stats">
+              <span class="badge badge-white">EST. TIME: 3.5 HOURS</span>
+              <span class="badge badge-lime">STATUS: COMPLETED & OFFERED</span>
+            </div>
+          </div>
+
+          <div class="case-grid">
+            <!-- Left: The Challenge -->
+            <div class="case-col">
+              <h4 class="col-heading" data-i18n="case_col_brief">1. THE SPRINT BRIEF (FROM FOUNDER)</h4>
+              <div class="brief-box">
+                <p data-i18n="case1_brief_p">
+                  "We have a 42% drop-off between KYC document submission and first SG-IDR cross-border transfer. We provide anonymized event logs for 2,000 onboarding attempts. Identify top 3 friction points and propose 2 low-code UX interventions."
+                </p>
+                <div class="tag-row">
+                  <span class="mini-tag">SQL</span>
+                  <span class="mini-tag">Funnel Analytics</span>
+                  <span class="mini-tag">Product Teardown</span>
+                </div>
+              </div>
+
+              <h4 class="col-heading" data-i18n="case_col_student">2. THE STUDENT (NUS FRESHMAN)</h4>
+              <div class="student-profile-card">
+                <div class="avatar">🎓</div>
+                <div>
+                  <strong>Darren L.</strong> — NUS Business & Computing (Year 1)
+                  <p class="sub" data-i18n="case1_student_sub">Zero prior corporate internships. Passionate about payments UX.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: The Deliverable & Outcome -->
+            <div class="case-col">
+              <h4 class="col-heading" data-i18n="case_col_output">3. DELIVERABLE EXCERPT (THE PROOF)</h4>
+              <div class="output-preview-card">
+                <div class="preview-header">
+                  <span>📄 PayBridge_KYC_Dropoff_Teardown_v2.pdf</span>
+                  <span class="badge badge-black">VERIFIED OUTPUT</span>
+                </div>
+                <div class="preview-content">
+                  <p><strong>Key Finding:</strong> 68% of Indonesian SMEs in SG failed at Singpass MyInfo sync because of company registration entity-type mismatch.</p>
+                  <p><strong>Recommendation:</strong> Implemented a 1-tap fallback upload with instant optical character recognition (OCR) preview.</p>
+                </div>
+              </div>
+
+              <h4 class="col-heading" data-i18n="case_col_result">4. FOUNDER EVALUATION & RESULT</h4>
+              <div class="verdict-card">
+                <div class="quote-header">
+                  <span class="stars">★★★★★</span>
+                  <span class="verdict-badge badge badge-coral" data-i18n="offer_badge">OFFER EXTENDED</span>
+                </div>
+                <blockquote data-i18n="case1_verdict">
+                  "Darren's teardown was cleaner than our external agency’s report. We offered him a paid part-time Product Analyst internship within 48 hours of reading his deliverable."
+                </blockquote>
+                <div class="founder-sig">
+                  <strong>Marcus Tan</strong>, Co-founder & COO, PayBridge SEA
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Case 2 Card -->
+        <article class="case-card card-brutal" id="case2-panel">
+          <div class="case-header">
+            <div class="company-info">
+              <span class="company-logo">🤖</span>
+              <div>
+                <h3 class="company-name">OmniSupply AI (Jurong Innovation District)</h3>
+                <span class="company-meta" data-i18n="case2_company_meta">Supply Chain Automation • Pre-Series A • 14 Staff</span>
+              </div>
+            </div>
+            <div class="task-stats">
+              <span class="badge badge-white">EST. TIME: 4.0 HOURS</span>
+              <span class="badge badge-lime">STATUS: COMPLETED & OFFERED</span>
+            </div>
+          </div>
+
+          <div class="case-grid">
+            <div class="case-col">
+              <h4 class="col-heading" data-i18n="case_col_brief">1. THE SPRINT BRIEF (FROM FOUNDER)</h4>
+              <div class="brief-box">
+                <p data-i18n="case2_brief_p">
+                  "Our warehouse ingestion receives erratic invoice PDFs from 40 different Malaysian & Singaporean hardware vendors. Build a resilient Python script utilizing regex and open-source parser to extract SKU, quantity, and GST values into normalized JSON."
+                </p>
+                <div class="tag-row">
+                  <span class="mini-tag">Python</span>
+                  <span class="mini-tag">Data Ingestion</span>
+                  <span class="mini-tag">PDF Parsing</span>
+                </div>
+              </div>
+
+              <h4 class="col-heading" data-i18n="case_col_student">2. THE STUDENT (NTU FRESHMAN)</h4>
+              <div class="student-profile-card">
+                <div class="avatar">💻</div>
+                <div>
+                  <strong>Siddharth K.</strong> — NTU Computer Science (Year 1)
+                  <p class="sub" data-i18n="case2_student_sub">International student from India. Had submitted 80+ cold resumes with zero replies.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="case-col">
+              <h4 class="col-heading" data-i18n="case_col_output">3. DELIVERABLE EXCERPT (THE PROOF)</h4>
+              <div class="output-preview-card">
+                <div class="preview-header">
+                  <span>💻 parser_v1.py & 98.4% Unit Test Suite</span>
+                  <span class="badge badge-black">VERIFIED CODE</span>
+                </div>
+                <div class="preview-content">
+                  <p><strong>Architecture:</strong> Created a modular rule-based parser with fallback regex scoring. Handled edge cases including handwritten GST annotations.</p>
+                </div>
+              </div>
+
+              <h4 class="col-heading" data-i18n="case_col_result">4. FOUNDER EVALUATION & RESULT</h4>
+              <div class="verdict-card">
+                <div class="quote-header">
+                  <span class="stars">★★★★★</span>
+                  <span class="verdict-badge badge badge-coral" data-i18n="offer_badge">OFFER EXTENDED</span>
+                </div>
+                <blockquote data-i18n="case2_verdict">
+                  "Siddharth didn't just solve the brief — he wrote 15 unit tests that caught 3 vendor formatting edge-cases we didn't know existed. We hired him as our Data Engineering intern immediately."
+                </blockquote>
+                <div class="founder-sig">
+                  <strong>Elena Wee</strong>, CTO & Head of Engineering
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Case 3 Card -->
+        <article class="case-card card-brutal" id="case3-panel">
+          <div class="case-header">
+            <div class="company-info">
+              <span class="company-logo">☕</span>
+              <div>
+                <h3 class="company-name">KopiLabs SG (Local D2C Brand)</h3>
+                <span class="company-meta" data-i18n="case3_company_meta">Specialty Singapore Robusta Brand • Bootstrapped • Jalan Besar</span>
+              </div>
+            </div>
+            <div class="task-stats">
+              <span class="badge badge-white">EST. TIME: 2.5 HOURS</span>
+              <span class="badge badge-lime">STATUS: COMPLETED & OFFERED</span>
+            </div>
+          </div>
+
+          <div class="case-grid">
+            <div class="case-col">
+              <h4 class="col-heading" data-i18n="case_col_brief">1. THE SPRINT BRIEF (FROM FOUNDER)</h4>
+              <div class="brief-box">
+                <p data-i18n="case3_brief_p">
+                  "We want to expand to Gen Z coffee drinkers in Singapore and Malaysia. We need 3 native TikTok script treatments that hook viewers in the first 2 seconds, highlight traditional Nanyang roasting heritage, and incorporate a viral humor angle."
+                </p>
+                <div class="tag-row">
+                  <span class="mini-tag">Short-form Video</span>
+                  <span class="mini-tag">Gen-Z Copywriting</span>
+                  <span class="mini-tag">Brand Strategy</span>
+                </div>
+              </div>
+
+              <h4 class="col-heading" data-i18n="case_col_student">2. THE STUDENT (SMU FRESHMAN)</h4>
+              <div class="student-profile-card">
+                <div class="avatar">📱</div>
+                <div>
+                  <strong>Cheryl Neo</strong> — SMU School of Social Sciences (Year 1)
+                  <p class="sub" data-i18n="case3_student_sub">Non-business major with zero corporate branding references on paper.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="case-col">
+              <h4 class="col-heading" data-i18n="case_col_output">3. DELIVERABLE EXCERPT (THE PROOF)</h4>
+              <div class="output-preview-card">
+                <div class="preview-header">
+                  <span>🎬 KopiLabs_TikTok_Hooks_Storyboard.pdf</span>
+                  <span class="badge badge-black">VERIFIED CAMPAIGN</span>
+                </div>
+                <div class="preview-content">
+                  <p><strong>Concept 01 Hook:</strong> 'Why your $8 iced latte is actually lying to your tastebuds (Singapore uncle approved).'</p>
+                  <p><strong>Result:</strong> Script generated 340,000 organic views on TikTok in first 72 hours of brand test.</p>
+                </div>
+              </div>
+
+              <h4 class="col-heading" data-i18n="case_col_result">4. FOUNDER EVALUATION & RESULT</h4>
+              <div class="verdict-card">
+                <div class="quote-header">
+                  <span class="stars">★★★★★</span>
+                  <span class="verdict-badge badge badge-coral" data-i18n="offer_badge">OFFER EXTENDED</span>
+                </div>
+                <blockquote data-i18n="case3_verdict">
+                  "Traditional agencies pitched us $6,000 retainers with zero cultural pulse. Cheryl produced 3 killer concepts in an afternoon. She's now heading our content marketing."
+                </blockquote>
+                <div class="founder-sig">
+                  <strong>Kenji Teo</strong>, Founder & Managing Director
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SECTION: THE COLD TRUTH (HEAD-TO-HEAD COMPARISON MATRIX) -->
+    <section id="comparison" class="section comparison-section">
+      <div class="content-container">
+        
+        <div class="section-label">
+          <span class="badge badge-coral" data-i18n="comp_badge">THE HEAD-TO-HEAD AUDIT</span>
+        </div>
+
+        <h2 class="section-title" data-i18n="comp_title">
+          Why Resumes Fail Everyone.<br>
+          Traditional Hiring vs. Micro-Internship Protocol.
+        </h2>
+
+        <div class="comparison-table-wrapper card-brutal">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th data-i18n="th_dimension">Hiring Dimension</th>
+                <th class="col-bad" data-i18n="th_traditional">Traditional Resume Process (LinkedIn / JobStreet)</th>
+                <th class="col-good" data-i18n="th_micro">MicroIntern SG Protocol</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1. <span data-i18n="dim_screening">Candidate Evaluation</span></strong></td>
+                <td class="col-bad">
+                  <span class="status-cross">❌</span>
+                  <span data-i18n="dim1_bad">Keywords, GPA filters, and AI-inflated prose. Evaluates who can hire a resume writer.</span>
+                </td>
+                <td class="col-good">
+                  <span class="status-check">✅</span>
+                  <span data-i18n="dim1_good">Actual work product. You evaluate code quality, analytical rigor, and execution speed.</span>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>2. <span data-i18n="dim_time">Time-to-Offer</span></strong></td>
+                <td class="col-bad">
+                  <span class="status-cross">❌</span>
+                  <span data-i18n="dim2_bad">3 to 6 weeks of screening, phone calls, panels, and waiting.</span>
+                </td>
+                <td class="col-good">
+                  <span class="status-check">✅</span>
+                  <span data-i18n="dim2_good">48 to 72 hours. From deliverable review directly to hiring conversation.</span>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>3. <span data-i18n="dim_sme_risk">SME Financial Risk</span></strong></td>
+                <td class="col-bad">
+                  <span class="status-cross">❌</span>
+                  <span data-i18n="dim3_bad">High. Paid intern salary ($3,000–$6,000 total) + 40+ hours senior staff onboarding wasted if bad fit.</span>
+                </td>
+                <td class="col-good">
+                  <span class="status-check">✅</span>
+                  <span data-i18n="dim3_good">Zero. Only a small micro-task stipend ($50–$150). You keep the asset even if you don't hire.</span>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>4. <span data-i18n="dim_freshman">Freshman / Junior Access</span></strong></td>
+                <td class="col-bad">
+                  <span class="status-cross">❌</span>
+                  <span data-i18n="dim4_bad">Zero. Filtered instantly by ATS because they lack "prior corporate experience".</span>
+                </td>
+                <td class="col-good">
+                  <span class="status-check">✅</span>
+                  <span data-i18n="dim4_good">100% meritocratic. Any student who can solve the problem gets their work reviewed by leadership.</span>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>5. <span data-i18n="dim_outcome">Worst-Case Scenario</span></strong></td>
+                <td class="col-bad">
+                  <span class="status-cross">❌</span>
+                  <span data-i18n="dim5_bad">You wasted months and hired a candidate who can’t deliver.</span>
+                </td>
+                <td class="col-good">
+                  <span class="status-check">✅</span>
+                  <span data-i18n="dim5_good">You gained a completed business analysis or script for a minimal task budget.</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: THE VANGUARD EARLY ACCESS PASS GENERATOR -->
+    <section id="vanguard-section" class="section vanguard-section">
+      <div class="content-container">
+        
+        <div class="section-label">
+          <span class="badge badge-yellow" data-i18n="vanguard_badge">PILOT COHORT 01 ACCESS</span>
+        </div>
+
+        <h2 class="section-title" data-i18n="vanguard_title">
+          Claim Your Vanguard Pass.<br>
+          Join Singapore's Micro-Internship Pioneer Network.
+        </h2>
+
+        <p class="section-subtitle" data-i18n="vanguard_subtitle">
+          We are accepting 30 forward-thinking Singapore SMEs and 200 motivated NUS / NTU / SMU students for our inaugural Q4 2026 pilot. Generate your cryptographic-style physical pass below.
+        </p>
+
+        <div class="vanguard-grid">
+          
+          <!-- Interactive Form -->
+          <div class="vanguard-form-card card-brutal">
+            <h3 class="form-title" data-i18n="form_heading">1. Select Identity & Enter Details</h3>
+            
+            <form id="vanguard-form">
+              <!-- Role Selector -->
+              <div class="form-group">
+                <label class="form-label" data-i18n="form_role_label">I AM JOINING AS:</label>
+                <div class="role-toggle-group">
+                  <label class="role-radio-label">
+                    <input type="radio" name="userRole" value="sme" checked />
+                    <span class="role-btn-box" data-i18n="role_sme">🏢 Singapore SME / Employer</span>
+                  </label>
+                  <label class="role-radio-label">
+                    <input type="radio" name="userRole" value="student" />
+                    <span class="role-btn-box" data-i18n="role_student">🎓 University Student / Talent</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Name -->
+              <div class="form-group">
+                <label for="fullName" class="form-label" data-i18n="form_name_label">YOUR FULL NAME / ENTITY NAME:</label>
+                <input type="text" id="fullName" class="brutal-input" placeholder="e.g. Marcus Tan or PayBridge SEA" required />
+              </div>
+
+              <!-- Email / WhatsApp -->
+              <div class="form-group">
+                <label for="contactEmail" class="form-label" data-i18n="form_contact_label">CORPORATE EMAIL OR WHATSAPP:</label>
+                <input type="text" id="contactEmail" class="brutal-input" placeholder="e.g. founder@company.sg or +65 9123 4567" required />
+              </div>
+
+              <!-- Domain / Interest -->
+              <div class="form-group">
+                <label for="taskFocus" class="form-label" data-i18n="form_focus_label">PRIMARY DOMAIN FOCUS:</label>
+                <select id="taskFocus" class="brutal-select">
+                  <option value="Product & Business Analytics" data-i18n="opt_biz">Product & Business Analytics</option>
+                  <option value="Software & AI Data Scripting" data-i18n="opt_tech">Software & AI Data Scripting</option>
+                  <option value="Growth Marketing & Content" data-i18n="opt_mkt">Growth Marketing & Short-form Content</option>
+                  <option value="Operations & Supply Chain" data-i18n="opt_ops">Operations & Supply Chain Automation</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn btn-block btn-yellow btn-xl" id="generate-pass-btn">
+                <span data-i18n="form_submit_btn">Generate My Vanguard Pass 🎟️</span>
+              </button>
+            </form>
+          </div>
+
+          <!-- Dynamic Pass Ticket Preview -->
+          <div class="vanguard-ticket-container">
+            <div class="ticket card-brutal" id="vanguard-ticket">
+              
+              <div class="ticket-top">
+                <div class="ticket-header-meta">
+                  <span class="ticket-brand">MICROINTERN.SG</span>
+                  <span class="ticket-status-pill badge badge-black" id="ticket-badge">OFFICIAL PIONEER</span>
+                </div>
+                <div class="ticket-id-display">
+                  <span class="lbl">PASS SERIAL:</span>
+                  <span class="val font-mono" id="ticket-id">SG-VG-0419</span>
+                </div>
+              </div>
+
+              <div class="ticket-divider-punched">
+                <div class="notch left"></div>
+                <div class="dashed-line"></div>
+                <div class="notch right"></div>
+              </div>
+
+              <div class="ticket-body">
+                <div class="ticket-field">
+                  <span class="field-lbl" data-i18n="tkt_holder">PASS HOLDER:</span>
+                  <h4 class="field-val" id="ticket-name">PayBridge SEA / Pilot Partner</h4>
+                </div>
+
+                <div class="ticket-field-row">
+                  <div class="ticket-field">
+                    <span class="field-lbl" data-i18n="tkt_role">ROLE DESIGNATION:</span>
+                    <span class="field-val-pill badge badge-yellow" id="ticket-role">SINGAPORE SME</span>
+                  </div>
+                  <div class="ticket-field">
+                    <span class="field-lbl" data-i18n="tkt_cohort">COHORT:</span>
+                    <span class="field-val font-mono">Q4-2026 PILOT</span>
+                  </div>
+                </div>
+
+                <div class="ticket-field">
+                  <span class="field-lbl" data-i18n="tkt_focus">CORE DOMAIN:</span>
+                  <span class="field-val" id="ticket-focus">Product & Business Analytics</span>
+                </div>
+
+                <div class="ticket-stamp-graphic">
+                  <div class="stamp-circle">
+                    <span>PROOF-OF-WORK</span>
+                    <strong>VERIFIED</strong>
+                    <span>SINGAPORE</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ticket-footer">
+                <div class="ticket-barcode">
+                  ||| | |||| | ||| |||| | ||||| || | ||| ||
+                </div>
+                <div class="ticket-actions-row">
+                  <button type="button" class="btn btn-sm btn-black" id="copy-pass-btn" data-i18n="tkt_copy">Copy Pass ID</button>
+                  <span class="ticket-note" data-i18n="tkt_note">Keep safe for priority pilot invitation.</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- High-Impact Brutalist Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      
+      <div class="footer-col brand-col">
+        <div class="brand-logo">
+          <span class="logo-box">μ</span>
+          <span class="logo-text">MicroIntern<span class="tld">.sg</span></span>
+        </div>
+        <p class="footer-motto" data-i18n="footer_motto">
+          "Get the Real Work Done. Impress the Company. Land the Offer."
+        </p>
+        <div class="singapore-badge">
+          <span>🇸🇬 Engineered in Singapore for NUS, NTU, SMU & Local SMEs.</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="col-title" data-i18n="footer_col1">MANIFESTO & MEMOS</h4>
+        <ul>
+          <li><a href="#manifesto" data-i18n="nav_manifesto">The Macro Manifesto</a></li>
+          <li><a href="#memo-founders" data-i18n="nav_for_smes">Chapter 01: To SME Founders</a></li>
+          <li><a href="#memo-students" data-i18n="nav_for_students">Chapter 02: To Students</a></li>
+          <li><a href="#proof-vault" data-i18n="nav_vault">Interactive Proof Vault</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="col-title" data-i18n="footer_col2">LOCAL ECOSYSTEM</h4>
+        <ul>
+          <li><a href="#vanguard-section" data-i18n="footer_link_sme">SME Pilot Program</a></li>
+          <li><a href="#vanguard-section" data-i18n="footer_link_student">NUS/NTU Vanguard Hub</a></li>
+          <li><a href="#comparison" data-i18n="footer_link_truth">The Resume Audit</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="col-title" data-i18n="footer_col3">CONTACT & FOUNDING TEAM</h4>
+        <p class="contact-info">
+          Founding Pilot Base: Kent Ridge, Singapore<br>
+          Email: <a href="mailto:pilot@microintern.sg">pilot@microintern.sg</a>
+        </p>
+        <div class="copyright-text">
+          © 2026 MicroIntern SG. All Rights Reserved. Built with uncompromising conviction.
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Toast Notification Overlay -->
+  <div id="toast" class="toast-card card-brutal" role="alert" aria-live="polite">
+    <span class="toast-icon">🎟️</span>
+    <span id="toast-msg">Pass Copied to Clipboard!</span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

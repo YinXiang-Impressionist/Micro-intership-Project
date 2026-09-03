@@ -292,11 +292,11 @@ strong {
 }
 
 /* ==========================================================================
-   Section 1: The Midnight Conversation in Tanjong Pagar
+   Section 1: The Founder's Note (Open Letters to Employers & Students)
    ========================================================================== */
 
-.chat-story-section {
-  padding: 3rem 1.5rem 4rem;
+.essay-section {
+  padding: 3.5rem 1.5rem 4.5rem;
   max-width: 820px;
   margin: 0 auto;
 }
@@ -308,119 +308,75 @@ strong {
   color: var(--ink-muted);
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  margin-bottom: 0.4rem;
+  margin-bottom: 1.5rem;
   display: block;
 }
 
-.section-heading-human {
-  font-size: clamp(1.6rem, 3vw, 2.2rem);
-  margin-bottom: 1rem;
-}
-
-.narrative-p {
-  margin-bottom: 1.5rem;
-  font-size: 1.08rem;
-  line-height: 1.75;
-}
-
-/* WhatsApp Dialog Simulator */
-.whatsapp-chat-card {
-  background-color: var(--wa-bg);
+.essay-block {
+  background-color: #FFF;
   border: 1px solid var(--border-paper);
   border-radius: var(--radius-lg);
-  padding: 1.75rem 1.25rem;
-  margin: 2.25rem 0;
+  padding: 2.5rem 2.25rem;
   box-shadow: var(--shadow-paper);
-  position: relative;
-  overflow: hidden;
 }
 
-.chat-card-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 1rem;
-  margin-bottom: 1.25rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-}
-
-.chat-partner-info {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-
-.partner-avatar {
-  width: 38px;
-  height: 38px;
-  background-color: #CBD5E1;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.essay-heading {
+  font-size: clamp(1.4rem, 2.5vw, 1.85rem);
   font-weight: 700;
-  color: #334155;
-  font-size: 0.95rem;
-}
-
-.partner-name {
-  font-size: 0.95rem;
-  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 1.35rem;
   color: var(--ink-main);
-  line-height: 1.2;
+  letter-spacing: -0.02em;
 }
 
-.partner-status {
-  font-size: 0.76rem;
-  color: var(--wa-meta-gray);
+.essay-body {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--ink-secondary);
 }
 
-.chat-thread {
-  display: flex;
-  flex-direction: column;
-  gap: 0.85rem;
+.essay-body p {
+  margin-bottom: 1.35rem;
 }
 
-.chat-msg {
-  max-width: 82%;
-  padding: 0.75rem 1rem 0.55rem;
-  border-radius: 8px;
-  position: relative;
-  font-size: 0.94rem;
-  line-height: 1.55;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.06);
+.essay-body p:last-child {
+  margin-bottom: 0;
 }
 
-.chat-msg.founder-msg {
-  align-self: flex-start;
-  background-color: var(--wa-white-bubble);
-  border-top-left-radius: 2px;
+.essay-quote-highlight {
+  font-family: var(--font-editorial);
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--ink-main);
+  background-color: var(--bg-warm-tint);
+  border-left: 3px solid var(--pen-blue);
+  padding: 1.25rem 1.5rem;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin: 1.5rem 0;
+  line-height: 1.6;
 }
 
-.chat-msg.student-msg {
-  align-self: flex-end;
-  background-color: var(--wa-green-bubble);
-  border-top-right-radius: 2px;
+.case-verdict-box {
+  background-color: var(--bg-warm-tint);
+  border-left: 3px solid var(--ink-main);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 1.25rem 1.4rem;
+  margin-top: 1.5rem;
 }
 
-.chat-timestamp {
+.verdict-author-tag {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--ink-main);
+  margin-bottom: 0.35rem;
   display: block;
-  text-align: right;
-  font-size: 0.68rem;
-  color: var(--wa-meta-gray);
-  margin-top: 0.35rem;
-  font-family: var(--font-mono);
 }
 
-.chat-handwritten-annotation {
-  position: absolute;
-  right: 1.5rem;
-  bottom: 0.5rem;
-  transform: rotate(-3deg);
-  background-color: var(--bg-highlight);
-  padding: 0.25rem 0.65rem;
-  border-radius: 4px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+.verdict-body-text {
+  font-size: 0.96rem;
+  color: var(--ink-secondary);
+  line-height: 1.6;
+  font-style: italic;
 }
 
 /* ==========================================================================
